@@ -54,3 +54,12 @@ const minhasenha = "minhaSenha123";
 console.log(minhasenha.length)
 
 //mostra quantos carcateres foram usados
+
+//exemplo concatenação de strings de texto
+
+const nomec = "Alessandr";
+const nomeSobre = "Morais";
+
+const NomeCompletoc = nomec + nomeSobre;
+
+console.log(nomec+ " " + nomeSobre);
