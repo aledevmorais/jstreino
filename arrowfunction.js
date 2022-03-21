@@ -21,3 +21,6 @@ const somanumerospequenos = (num3, num4) => {
 // usar a arrow function por treino para orientar a objeto é melhor
 
 // hoisting: arrow function se comporta como expressão
+
+// Que com o hoisting o JavaScript analisa todo o código procurando
+// por variáveis declaradas com var e funções para trazer tais declarações para o início do código.
