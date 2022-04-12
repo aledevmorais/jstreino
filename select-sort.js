@@ -38,4 +38,14 @@ console.log(livros)
 //]
 //
 //
-// ordenação pelo método sort
+// ordenação pelo método sort 
+
+// select, sort -> ordenar em ingles
+// o require faz uma requisição a um ocidgo já gravado com a sintaxe require('./) e logo em seguida
+// selecione o código para ser importado dentro da arrays no caso livros
+// criar um for para ordenar esta lista que foi chamada
+// dentro do for cria uma let igual a 0 para buscar o primeiro item dda lista
+// esse for vai funcionar enquanto livros.lenght(tamanho da nossa lista de livros)
+// adicionamos atual++ para o javascript percorrer a lista toda
+// ai oara isso (for) adicionaremos o if (a condição ou function)
+// logo apos isso o console.log para exibir a seleção
