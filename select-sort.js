@@ -49,3 +49,73 @@ console.log(livros)
 // adicionamos atual++ para o javascript percorrer a lista toda
 // ai oara isso (for) adicionaremos o if (a condição ou function)
 // logo apos isso o console.log para exibir a seleção
+// sort -> podemos usar includes() find() or filter()
+// sort -> para ordenar arrays
+
+// o método sort utliza um "algorítmo de ordenação" -> precisamos estudar o seu algorítmo 
+
+// o javascript se densenvolveu como uma linguagem interpretada pelos navegadores
+
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+var fruit = ['cherries', 'apples', 'bananas'];
+fruit.sort(); // ['apples', 'bananas', 'cherries']
+
+var scores = [1, 10, 2, 21];
+scores.sort(); // [1, 10, 2, 21]
+// Observe que 10 vem antes do 2,
+// porque '10' vem antes de '2' em ponto de código Unicode.
+
+var things = ['word', 'Word', '1 Word', '2 Words'];
+things.sort(); // ['1 Word', '2 Words', 'Word', 'word']
+// Em Unicode, números vêem antes de letras maiúsculas,
+// as quais vêem antes das minúsculas.
+
+// prestar atenção pois o método retornará conforme  a configuração da engine do navegador
+// precisa declarar para obter o resultado esperado
+
+//Se o parametro "funcaoDeComparacao" é fornecido, o array será ordenado de acordo com o valor
+//de retorno da "funcaoDeComparacao".
+
+//é sempre bom fornecer os parâmetros pois os navegadores podem mudar.
+
+//ótimo exemplo para identificar isto -> "FUNÇÃO DE COMPARAÇÃO"
+
+// Se funcaoDeComparacao(a, b) for menor que 0, ordena a para um índice anterior a b, i.e. a vem primeiro.
+
+// Se funcaoDeComparacao(a, b) retornar 0, deixa a e b inalterados em relação um ao outro, mas ordenado em relação
+// a todos os outros elementos. Nota: O padrão ECMAscript não garante este comportamento, e, portanto, 
+// nem todos os navegadores (e.g. Versões do Mozilla anteriores a 2003) respeitarão isto.
+
+// Se funcaoDeComparacao(a, b) é maior que 0, ordena b para um índice anterior que a.
+
+// funcaoDeComparacao(a, b) sempre deve retornar o mesmo valor dado um par específico de elementos a e b como 
+// seus dois parametros. Se resultados inconsistentes são retornados, então a ordenação é indefinida.
+
+// Então, a função de comparação tem a seguinte forma:
+
+// function comparar(a, b) {
+//    if (a é menor que b em algum critério de ordenação) {
+//      return -1;
+//    }
+//    if (a é maior que b em algum critério de ordenação) {
+//      return 1;
+//    }
+//    // a deve ser igual a b
+//    return 0;
+//  }
+
+function compararNumeros(a, b) {
+    return a - b;
+  }
+
+// O método de ordenação pode convenientemente ser usada com funções anônimas (e closures):  
+
+  var numbers = [4, 2, 5, 1, 3];
+  numbers.sort(function(a, b) {
+    return a - b;
+  });
+  console.log(numbers);
+
+  // this return [ 1, 2, 3, 4, 5 ] -> ordenou o array em ordem crescente
+  
