@@ -1,27 +1,27 @@
 const precoLivros = [
     {
-        titulo: "JavaScript",
+        titulo: "Java",
         preco: 25,
     },
     {
-        titulo: "JavaScript II",
+        titulo: "Elixir",
         preco: 15,
     },
     {
-        titulo: "JavaScript III",
+        titulo: "Go",
         preco: 30,
     },
     {
-        titulo: "JavaScript IV",
+        titulo: "JavaScript",
         preco: 50,
     },
     {
-        titulo: "JavaScript V",
+        titulo: "PHP",
         preco: 45,
     },
 
     {
-        titulo: "JavaScript VI",
+        titulo: "Python",
         preco: 20,
     }];
 
