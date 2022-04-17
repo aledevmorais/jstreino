@@ -1,30 +1,28 @@
-const precoLivros = [
+const precosLivros = [
     {
-        titulo: "Java",
-        preco: 25,
+      titulo: "JAVA",
+      preco: 30
     },
     {
-        titulo: "Elixir",
-        preco: 15,
-    },
+      titulo: "ELIXIR",
+      preco: 50
+    }, 
     {
-        titulo: "Go",
-        preco: 30,
-    },
+      titulo: "Go",
+      preco: 45
+    }, 
     {
-        titulo: "JavaScript",
-        preco: 50,
-    },
+      titulo: "JavaScript",
+      preco: 25
+    }, 
     {
-        titulo: "PHP",
-        preco: 45,
-    },
-
+      titulo: "PHP",
+      preco: 15
+    }, 
     {
-        titulo: "Python",
-        preco: 20,
-    }];
-
-module.exports = precoLivros;
-
-
+      titulo: "Python",
+      preco: 20
+    }
+  ];
+  
+  module.exports = precosLivros;
