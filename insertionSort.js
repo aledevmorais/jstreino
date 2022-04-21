@@ -29,3 +29,24 @@ insertionSort(livros);
 //  { titulo: 'Go', preco: 45 },
 //  { titulo: 'ELIXIR', preco: 50 }
 // ]
+
+// o insertion sort é um algoritmo quadratico vai da posição n a posição n - pra fazer a ordenação
+
+// metodos de ordenação é bom saber a forma como escreve e outros métodos para ajustar a quantidade
+// de memoria usada
+// existem varias formas de se combinar algoritmos de forma linear ou quadratica -
+// exemplo em uma tabela cujo o indice seja por ordem alfabetica não necessitamos busca em toda array
+// de a a (z) visto que a seleção esta chamando letra (e) por exemplo -> nesse caso a ordenação poderia ser linear
+// a partir do (e)
+
+//O(n)	linear
+//O(n²)	quadrático
+
+
+// notação	nome
+// O(n)	linear
+// O(n²)	quadrático
+// O(1)	constante
+// O(log(n))	logarítmica
+// O(nc)	polinomial
+// O(cn)	exponencia
