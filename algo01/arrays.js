@@ -49,3 +49,5 @@ const edFolha = [
   ]
   
   module.exports = { edFolha, edGalho }
+
+  // duas listas de livros com o seu preço sem ordenação
