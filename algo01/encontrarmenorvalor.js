@@ -24,7 +24,23 @@ function trocaLugar(arraysort, de, para) {
     arraysort[de] = elem2
 }
 
-console.log(encontraMenores(listaLivros[2], listaLivros));
+function divideNoPivo(arraysort) {
+    let pivo = arraysort [Math.floor(arraysort.length /2)];
+    // O MATH ESTÁ ENTRE CHAVES POIS É UM NUMBER
+    encontraMenores(pivo, arraysort);
+    let valoresMenores = 0;
+    for(let analisando = 0; analisando < arraysort.length; analisando++) {
+    let atual = arraysort[analisando];
+    if(atual.preco <= pivo.preco && atual !== pivo) {
+        trocaLugar(arraysort, analisando, valoresMenores)
+        valoresMenores++}
+    }
+    return arraysort;
+}
+
+console.log(divideNoPivo(listaLivros))
+
+//console.log(encontraMenores(listaLivros[2], listaLivros));
 
 // this return five elements to array
 // dividimos o array com base em um pivo (livro Java)
@@ -48,3 +64,21 @@ console.log(encontraMenores(listaLivros[2], listaLivros));
 // ai mandamos troca os iten de lugar 
 
 // ele o pivo é o 5 elemento de menor valor
+
+// RUST É O PIVO POIS É O MEIO DA LISTA -> E A CONDIÇÃO PASSADA PEDE A ORDENAÇÃO PELO MENOR VALOR
+// A PARTIR DA SELEÇÃO DO PIVO PARA TRAS
+
+// agora com a nova disposição o pivo passa a ser o RUST 22 e os outros de menor valor foram
+// reordenados a partir do pivo Rust
+
+//[
+//    { titulo: 'PHP', preco: 15 },
+//    { titulo: 'Python', preco: 20 },
+//    { titulo: 'Rust', preco: 22 },
+
+// a array continua abaixo foi obedecida a ordem de escolher e ordem os de menores valores
+// a partir do RUST que é 22 então -> PHP e Python que sao os unicos de menor valor abaixo do RUST
+
+//    { titulo: 'Go', preco: 45 },
+//    { titulo: 'Elixir', preco: 50 },
+// QUICK SORT -> PARTICIONAR A PARTIR DE UM PIVO ORDENANDO DE ESQUERDA E DIREITA
