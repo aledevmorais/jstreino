@@ -1,7 +1,6 @@
 // piVô
 const listaLivros = require('./arraysort');
 
-
 function encontraMenores(pivo, arraysort) {
     let menores = 0;
 
@@ -38,7 +37,9 @@ function divideNoPivo(arraysort) {
     return arraysort;
 }
 
-console.log(divideNoPivo(listaLivros))
+//console.log(divideNoPivo(listaLivros))
+
+module.exports = trocaLugar;
 
 //console.log(encontraMenores(listaLivros[2], listaLivros));
 
